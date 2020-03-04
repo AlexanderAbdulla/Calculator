@@ -17,38 +17,66 @@
               </div>
         </header>
         <div class="slds-card__body slds-card__body_inner">
-            <div class="slds-grid slds-gutters">
-                <div class="slds-col slds-size_1-of-3 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="1">
-                    <span>1</span>
+            <div class="slds-m-around_medium">
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="1">
+                        <span>1</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="2">
+                        <span>2</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="3">
+                        <span>3</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterOperation} data-id="a">
+                        <span>+</span>
+                    </div>
                 </div>
-                <div class="slds-col slds-size_1-of-3 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="2">
-                    <span>2</span>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="4">
+                        <span>4</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="5">
+                        <span>5</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="6">
+                        <span>6</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterOperation} data-id="b">
+                        <span>-</span>
+                    </div>
                 </div>
-                <div class="slds-col slds-size_1-of-3 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="3">
-                    <span>3</span>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="7">
+                        <span>7</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="8">
+                        <span>8</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="9">
+                        <span>9</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="c">
+                        <span>x</span>
+                    </div>
+                </div>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterOperation} data-id="d">
+                        <span>C</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="0">
+                        <span>0</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterEquals} data-id="e">
+                        <span>=</span>
+                    </div>
+                    <div class="slds-col slds-size_1-of-4 slds-box slds-align_absolute-center" onclick={enterOperation} data-id="f">
+                        <span>/</span>
+                    </div>
                 </div>
             </div>
-            <div class="slds-grid slds-gutters">
-                <div class="slds-col slds-size_1-of-3 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="1">
-                    <span>4</span>
-                </div>
-                <div class="slds-col slds-size_1-of-3 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="2">
-                    <span>5</span>
-                </div>
-                <div class="slds-col slds-size_1-of-3 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="3">
-                    <span>6</span>
-                </div>
-            </div>
-            <div class="slds-grid slds-gutters">
-                <div class="slds-col slds-size_1-of-3 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="1">
-                    <span>7</span>
-                </div>
-                <div class="slds-col slds-size_1-of-3 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="2">
-                    <span>8</span>
-                </div>
-                <div class="slds-col slds-size_1-of-3 slds-box slds-align_absolute-center" onclick={enterNumber} data-id="3">
-                    <span>9</span>
-                </div>
+            <div class="slds-form-element__control">
+                <input type="text" id="calculatorDisplay" placeholder={currentDisplay} required="" class="slds-input" />
             </div>
         </div>
     </article>
