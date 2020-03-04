@@ -1,0 +1,33 @@
+<template>
+    <article class="slds-card">
+        <header class="slds-card__header slds-grid">
+            <div class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-account" title="calculator">
+                      <span class="slds-assistive-text">Calculator</span>
+                    </span>
+                  </div>
+            </div> 
+            <div class="slds-media__body">
+                <h2 class="slds-card__header-title">
+                  <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Calculator">
+                    <span>Calculator</span>
+                  </a>
+                </h2>
+              </div>
+        </header>
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_1-of-3 slds-box" onclick={enterNumber} data-id="1">
+                    <span>1</span>
+                </div>
+                <div class="slds-col slds-size_1-of-3 slds-box" onclick={enterNumber} data-id="2">
+                    <span>2</span>
+                </div>
+                <div class="slds-col slds-size_1-of-3 slds-box" onclick={enterNumber} data-id="3">
+                    <span>3</span>
+                </div>
+            </div>
+        </div>
+    </article>
+</template>
